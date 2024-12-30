@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
 
 <style>
+
 body {
 	text-align: center;
 	font-family: Times;
@@ -11,38 +11,37 @@ body {
 	}
 
 button {
-      padding: 10px 20px;
-      margin: 5px;
-      background-color:#ffccd4;
-      color: purple;
-      border: none;
-      cursor: pointer;
-      font-family: Impact;
-      border: 5px solid #ffffff
-      }
+	padding: 10px 20px;
+	margin: 5px;
+	background-color:#ffccd4;
+	color: purple;
+	border: none;
+	cursor: pointer;
+	font-family: Impact;
+	border: 5px solid #ffffff
+	}
 
 H1 {
 	color: purple
-    }
+	}
     
-img {
+.pusheen-image {
 	border: 5px solid #ffffff
     }
     
-img:hover {
-            transform: rotate(180deg);
+.pusheen-image:hover {
+            animation:spin 3s linear infinite;
             }
-
+            
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
     
 </style>
 
-</head>
-
     <body>
-        <H1>Merry Christmas! 🎄</H1>
+        <h1>Merry Christmas! 🎄</h1>
 
-        <div class="pusheen-image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVQ0-WIs-Zg-7KDJFaQr0TjbGd2a3btdWSqA&s"
+        <div>
+            <img class="pusheen-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVQ0-WIs-Zg-7KDJFaQr0TjbGd2a3btdWSqA&s"
         </div>
 
       <p><i>Pusheen the Cat wishing you a very Merry Christmas and a Happy New Year!</i> 💖<p>
@@ -63,4 +62,5 @@ img:hover {
  
 
     </body>
+    
 </html>
